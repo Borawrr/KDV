@@ -9,25 +9,22 @@ public class KDV {
 
         float kdv = 0.18f;
         float KdvMax = 0.08f;
-
+        
         int Fiyat;
-
+        
         System.out.println("Ürünün fiyatını giriniz : ");
+        
         Fiyat = scanner.nextInt();
-
         
-        
-
         if(Fiyat <= 1000)
         {
+            
             System.out.println("Ürünün KDV uygulanmış fiyatı : " +  (kdv * Fiyat + Fiyat));
+        
         }else{
-
+            
             System.out.println("Ürünün KDV uygulanmış fiyatı " +  (Fiyat + KdvMax * Fiyat));
         }
-
-
-
+        scanner.close();
     }
-
 }
